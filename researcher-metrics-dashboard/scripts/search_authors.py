@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys, requests, os, json
 
-OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "you@example.com")
+OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "arber.hoti@uni-pr.edu")
 
 def search_authors(query: str, per_page=25):
     url = "https://api.openalex.org/authors"
