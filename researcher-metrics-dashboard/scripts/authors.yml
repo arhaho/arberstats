@@ -1,0 +1,6 @@
+# List OpenAlex Author IDs you want to track.
+# Tip: Run `python scripts/search_authors.py "First Last"` or
+#      `python scripts/search_by_institution.py "Your University"` to discover IDs.
+authors:
+  - id: A5023888391  # Example author (replace with your list)
+  - id: A2941298215  # Example author (replace with your list)
