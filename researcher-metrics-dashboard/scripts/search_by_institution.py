@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys, requests, os
 
-OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "you@example.com")
+OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "arber.hoti@uni-pr.edu")
 
 def find_institution(name: str):
     url = "https://api.openalex.org/institutions"
@@ -40,7 +40,7 @@ def authors_by_institution_id(inst_id: str, per_page=50, max_pages=4):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python scripts/search_by_institution.py \"University Name\"")
+        print("Usage: python scripts/search_by_institution.py \"University of Prishtina\"")
         sys.exit(1)
     inst_name = sys.argv[1]
     inst = find_institution(inst_name)
