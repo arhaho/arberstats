@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_OUT = ROOT / "frontend" / "data" / "snapshot.json"
 
 # Put your contact email here so OpenAlex can reach you if needed (recommended)
-OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "you@example.com")
+OPENALEX_MAILTO = os.getenv("OPENALEX_MAILTO", "arber.hoti@uni-pr.edu")
 
 def get_author(author_id: str):
     url = f"https://api.openalex.org/authors/{author_id}"
