@@ -12,7 +12,7 @@ def search_authors(query: str, per_page=25):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python scripts/search_authors.py \"First Last\"")
+        print("Usage: python scripts/search_authors.py \"Arber Hoti\"")
         sys.exit(1)
     query = sys.argv[1]
     results = search_authors(query)
